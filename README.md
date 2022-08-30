@@ -8,6 +8,6 @@ All the projects are hosted with Github Pages: [https://pedrodcn.github.io/front
 
 ## Projects
 
-| No. | Project                        | Repo                                                                                        | Live                                                                      |
-| --- |--------------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| 1   | Order summary card component | [Link to repo](https://github.com/PedroDCN/frontendmentor-solutions/tree/main/ordersummary) | [Live](https://github.com/PedroDCN/frontendmentor-solutions/ordersummary) |
+| No. | Project                        | Repo                                                                                        | Live                 |
+| --- |--------------------------------|---------------------------------------------------------------------------------------------|----------------------|
+| 1   | Order summary card component | [Link to repo](https://github.com/PedroDCN/frontendmentor-solutions/tree/main/ordersummary) | [Live](https://pedrodcn.github.io/frontendmentor-solutions/ordersummary) |
