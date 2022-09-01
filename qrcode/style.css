@@ -6,6 +6,7 @@
     --fs-body: 15px;
     --ff-primary: 'Outfit', sans-serif;
     --padding-body: 1.75rem;
+    --border-radius: 0.75rem;
 }
 
 html, body, main, section, footer, h1, p, img, a {
@@ -55,6 +56,28 @@ h1 {
     color: var(--color-primary);
 }
 
+.qr-code {
+    width: 100%;
+    max-width: 21.5rem;
+    padding: 1rem;
+    border-radius: calc(2 * var(--border-radius));
+    text-align: center;
+    background-color: var(--white);
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code__img {
+    border-radius: var(--border-radius);
+}
+
+.qr-code__content {
+    padding: 1.5rem 1rem;
+}
+
+.qr-code__content > * + * {
+    margin-top: 1rem;
+}
+
 .attribution {
     font-size: 0.725rem;
     text-align: center;
@@ -62,4 +85,10 @@ h1 {
 
 .attribution a {
     color: var(--color-primary);
+}
+
+@media screen and (min-width: 1780px) {
+    html {
+        font-size: calc(var(--fs-body) * 1.2);
+    }
 }
