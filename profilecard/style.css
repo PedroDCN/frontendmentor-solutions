@@ -11,7 +11,7 @@ html {
     font-size: var(--fs-body);
 }
 
-html, body, main, article, footer, h3, p, div {
+html, body, main, article, footer, h1, p, div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -52,7 +52,7 @@ img {
     object-fit: cover;
 }
 
-h3, .stat__number {
+h1, .stat__number {
     color: var(--primary-2);
     font-size: 1rem;
     font-weight: 700;
