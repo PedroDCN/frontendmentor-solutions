@@ -12,3 +12,4 @@ All the projects are hosted with Github Pages: [https://pedrodcn.github.io/front
 |-----|------------------------------|---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | 1   | Order summary card component | [Link to repo](https://github.com/PedroDCN/frontendmentor-solutions/tree/main/ordersummary) | [Live](https://pedrodcn.github.io/frontendmentor-solutions/ordersummary) |
 | 2   | Profile card component       | [Link to repo](https://github.com/PedroDCN/frontendmentor-solutions/tree/main/profilecard)  | [Live](https://pedrodcn.github.io/frontendmentor-solutions/profilecard)  |
+| 3   | QR Code component            | [Link to repo](https://github.com/PedroDCN/frontendmentor-solutions/tree/main/profilecard)  | [Live](https://pedrodcn.github.io/frontendmentor-solutions/qrcode)       |
