@@ -8,6 +8,7 @@
     --padding-body: 1.2rem;
     --ff-title: 'Big Shoulders Display', cursive;
     --ff-primary: 'Lexend Deca', sans-serif;
+    --border-radius: 0.625rem;
 }
 
 html, body, main, footer, section, img, h1, p {
@@ -55,6 +56,10 @@ h1 {
     font-family: var(--ff-title);
 }
 
+p {
+    color: var(--white);
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -71,7 +76,46 @@ button {
     font-size: 1rem;
     font-family: inherit;
     background-color: var(--neutral);
+    transition: 100ms linear;
     cursor: pointer;
+}
+
+button:hover, button:focus {
+    background-color: transparent;
+    border: 2px solid var(--neutral);
+    color: var(--neutral);
+}
+
+.column-layout {
+    max-width: 62rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.car-type {
+    break-inside: avoid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3.3rem;
+}
+
+.car-type--sedan {
+    color: var(--primary-1);
+    background-color: var(--primary-1);
+}
+
+.car-type--suv {
+    color: var(--primary-2);
+    background-color: var(--primary-2);
+}
+
+.car-type--luxury {
+    color: var(--primary-3);
+    background-color: var(--primary-3);
 }
 
 .attribution {
@@ -81,5 +125,18 @@ button {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 680px) {
+    .column-layout {
+        column-count: 3;
+        column-gap: 0;
+    }
+}
+
+@media screen and (min-width: 1810px) {
+    html {
+        font-size: calc(var(--fs-body) * 1.125);
+    }
 }
 
