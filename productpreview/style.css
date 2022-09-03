@@ -7,7 +7,7 @@
     --fs-body: 14px;
     --ff-primary: 'Montserrat', sans-serif;
     --ff-title: 'Fraunces', serif;
-    --padding-body: 1.45rem;
+    --padding-body: 1rem 1rem 0.5rem;
     --border-radius: 0.625rem;
 }
 
@@ -26,7 +26,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: var(--padding-body);
     font-family: var(--ff-primary);
@@ -38,10 +38,9 @@ body {
 
 main {
     flex: auto;
-    margin: 1rem 0;
-    border-radius: var(--border-radius);
-    background-color: var(--white);
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -51,8 +50,9 @@ footer {
 h1 {
     color: var(--neutral-1);
     font-family: var(--ff-title);
+    font-size: 2.2rem;
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.1;
 }
 
 h2 {
@@ -85,6 +85,50 @@ button {
     cursor: pointer;
 }
 
+button:hover, button:focus {
+    background-color: hsl(156, 42%, 18%);
+}
+
+.product {
+    width: 350px;
+    max-width: 600px;
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.product__img-desktop {
+    display: none;
+}
+
+.product__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.65rem;
+}
+
+.product__price-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product__price {
+    color: var(--primary-1);
+    font-size: 2.125rem;
+    font-family: var(--ff-title);
+    font-weight: 700;
+}
+
+.product__old-price {
+    font-size: 0.9rem;
+    margin-left: 1.5rem;
+    text-decoration: line-through;
+}
+
 .attribution {
     font-size: 0.825rem;
     text-align: center;
@@ -92,4 +136,29 @@ button {
 
 .attribution a {
     color: var(--primary-1);
+}
+
+@media screen and (min-width: 1190px) {
+    .product {
+        display: flex;
+        width: auto;
+        overflow: auto;
+    }
+
+    .product__img-desktop {
+        display: block;
+        max-width: 300px;
+    }
+
+    .product__img-mobile {
+        display: none;
+    }
+
+    .product__content {
+        padding: 2.5rem;
+    }
+
+    .attribution {
+        font-size: 0.9rem;
+    }
 }
