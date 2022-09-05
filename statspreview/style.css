@@ -1,0 +1,80 @@
+:root {
+    --primary-bg-1: hsl(233, 47%, 7%);
+    --primary-bg-2: hsl(244, 38%, 16%);
+    --primary-accent-1: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --neutral-1: hsla(0, 0%, 100%, 0.75);
+    --neutral-2: hsla(0, 0%, 100%, 0.6);
+    --fs-body: 15px;
+    --padding-body: 3rem 1.25rem 1rem;
+    --ff-primary: 'Inter', sans-serif;
+    --ff-secondary: 'Lexend Deca', sans-serif;
+}
+
+html, body, main, footer, section, img, h1, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--fs-body);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-body);
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: var(--ff-primary);
+    color: var(--neutral-1);
+    background-color: var(--primary-bg-1);
+}
+
+h1, h3 {
+    line-height: 1.1;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 2.35rem;
+    font-weight: 700;
+}
+
+h3 {
+    color: var(--neutral-2);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+main {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    flex: none;
+}
+
+.attribution {
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--primary-accent-1);
+}
