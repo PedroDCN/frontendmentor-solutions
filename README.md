@@ -17,3 +17,4 @@ All the projects are hosted with Github Pages: [https://pedrodcn.github.io/front
 | 5   | Product preview card component  | [Link to repo](https://github.com/PedroDCN/frontendmentor-solutions/tree/main/productpreview) | [Live](https://pedrodcn.github.io/frontendmentor-solutions/productpreview) |
 | 6   | 3-column preview card component | [Link to repo](https://github.com/PedroDCN/frontendmentor-solutions/tree/main/columnpreview)  | [Live](https://pedrodcn.github.io/frontendmentor-solutions/columnpreview)  |
 | 7   | Stats preview card component    | [Link to repo](https://github.com/PedroDCN/frontendmentor-solutions/tree/main/statspreview)   | [Live](https://pedrodcn.github.io/frontendmentor-solutions/statspreview)   |
+| 8   | Single price grid component     | [Link to repo](https://github.com/PedroDCN/frontendmentor-solutions/tree/main/singleprice)    | [Live](https://pedrodcn.github.io/frontendmentor-solutions/singleprice)    |
