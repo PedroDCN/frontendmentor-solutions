@@ -69,7 +69,14 @@ img {
 section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2.5rem;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .title {
@@ -85,6 +92,8 @@ section {
 .ratings {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
     gap: 1rem;
 }
 
@@ -94,9 +103,17 @@ section {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    width: 100%;
+    max-width: 450px;
     padding: 1rem 0;
     border-radius: 0.5rem;
     background-color: var(--neutral-2);
+}
+
+.rating__score {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .rating__description {
@@ -114,6 +131,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    max-width: 350px;
     padding: 2.625rem 1.875rem 2.1rem;
     border-radius: 0.5rem;
     color: var(--white);
@@ -134,6 +152,74 @@ section {
 .testimonial__name {
     font-size: 1.25rem;
     color: var(--white);
+}
+
+@media screen and (min-width: 900px) {
+    section {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 2rem;
+    }
+
+    .heading {
+        width: 50%;
+        gap: 2rem;
+    }
+
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .title, .description {
+        text-align: left;
+        max-width: 425px;
+    }
+
+    .ratings {
+        align-items: center;
+        width: 50%;
+    }
+
+    .rating {
+        padding: 1.25rem 1rem;
+    }
+
+    .rating {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .rating:nth-of-type(2) {
+        transform: translateX(3rem);
+    }
+
+    .rating:nth-of-type(3) {
+        transform: translateX(6rem);
+    }
+
+    .testimonials {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .testimonial:nth-of-type(2) {
+        transform: translateY(1rem);
+    }
+
+    .testimonial:nth-of-type(3) {
+        transform: translateY(2rem);
+    }
+
+    .testimonial__description {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: var(--padding-body);
+    }
 }
 
 .bg-pattern {
