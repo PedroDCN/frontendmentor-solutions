@@ -31,12 +31,6 @@ body {
     background-color: var(--primary-1);
 }
 
-header {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
-
 header img {
     width: 45%;
     max-width: 200px;
@@ -63,7 +57,7 @@ h1 {
 }
 
 img {
-    display: inline-block;
+    display: block;
     max-width: 100%;
     object-fit: cover;
 }
@@ -103,26 +97,29 @@ button:hover, button:active {
 
 .social {
     display: flex;
-    place-items: center;
+    align-items: center;
+    justify-content: center;
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 50%;
     outline: 1px solid var(--white);
     outline-offset: 3px;
     text-decoration: none;
+    transition: all 200ms ease-in-out;
 }
 
 .icon {
     color: var(--white);
-    transition: all 200ms ease-in-out;
     cursor: pointer;
+    transition: all 200ms ease-in-out;
 }
 
 .icon-facebook, .icon-twitter {
     FILL: currentColor;
 }
 
-.icon:hover {
+.social:hover, .social:hover > .icon {
+    outline-color: var(--primary-2);
     stroke: var(--primary-2);
     color: var(--primary-2);
 }
@@ -132,13 +129,74 @@ button:hover, button:active {
 }
 
 .bg-img {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
+}
+
+.bg-img > img {
     object-fit: contain;
+    width: 100%;
+}
+
+@media screen and (min-width: 980px) {
+    body {
+        padding: 4rem 5rem 0;
+    }
+
+    main {
+        flex-direction: row;
+        text-align: left;
+        align-items: normal;
+        margin-bottom: 0;
+    }
+
+    .content {
+        max-width: 550px;
+        margin-top: 1.5rem;
+    }
+
+    .img {
+        width: 700px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    button {
+        font-size: 1.18rem;
+    }
+
+    .socials {
+        align-self: flex-end;
+    }
+
+    .social {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 2.8125rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .bg-img > img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .attribution {
