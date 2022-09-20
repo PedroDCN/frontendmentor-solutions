@@ -1,0 +1,77 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --neutral-1: hsl(234, 12%, 34%);
+    --neutral-2: hsl(229, 6%, 66%);
+    --neutral-3: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --fs-body: 15px;
+    --padding-body: 90px 2rem 0;
+    --ff-primary: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: var(--fs-body);
+}
+
+html, body, main, section, article, footer, h1, h2, h3, img, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-body);
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--neutral-2);
+    background-color: var(--neutral-3);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: var(--neutral-1);
+    font-size: 1.725rem;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.attribution {
+    font-size: 0.825rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
