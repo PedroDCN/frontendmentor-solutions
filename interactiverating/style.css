@@ -1,0 +1,75 @@
+:root {
+    --primary-1: hsl(25, 97%, 53%);
+    --neutral-1: hsl(217, 12%, 63%);
+    --neutral-2: hsl(216, 12%, 54%);
+    --neutral-3: hsl(213, 19%, 18%);
+    --neutral-4: hsl(216, 12%, 8%);
+    --white: hsl(0, 0%, 100%);
+    --fs-body: 15px;
+    --padding-body: 1.6rem;
+    --ff-primary: 'Overpass', sans-serif;
+}
+
+html {
+    font-size: var(--fs-body);
+}
+
+html, body, main, footer, h1, img, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-body);
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--neutral-1);
+    background-color: var(--neutral-4);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    background-color: var(--neutral-3);
+}
+
+h1 {
+    color: var(--white);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+.attribution {
+    font-size: 0.825rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--neutral-2);
+}
+
+.attribution a:hover {
+    color: var(--primary-1);
+}
